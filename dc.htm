@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vocaloid Portal</title>
+
+<style type="text/css" href="./font-awesome.min.css">
+
+	*{
+		font-family: Chiller;
+	}
+
+	body,h1,p{
+		box-sizing: border-box;
+		padding: 0px;
+		margin: 0px auto;
+		}
+
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+header{
+	background: red;
+	color: white;
+	padding: 10px;
+}
+
+
+footer{
+	background: red;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+.brand{
+	text-decoration: none;
+	color: white;
+}
+
+.cyan{
+	color: red;
+}
+
+nav{
+	display: flex;
+	background: #131418;
+}
+
+nav>ul{
+	display: flex;
+	list-style: none;
+	padding: 0px;
+	flex: 1;
+	margin: 0px;
+}
+
+nav>ul li a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+}
+
+nav>ul li a:hover{
+background: red;
+color: white;
+}
+
+nav ul li:hover .sub-menu{
+	display: block;
+}
+
+.sub-menu{
+	position: relative;
+	list-style: none;
+	display: none;
+}
+
+.sub-menu ul a{
+	color: cyan;
+}
+
+section{
+	height: 80vh;
+	display: flex;
+}
+
+section.banner{
+	justify-content: center;
+	align-items: center;
+}
+
+.col{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.padding{
+	padding: 40px;
+}
+
+.btn{
+	background: transparent;
+	padding: 20px;
+	border: 1px solid red;
+	border-radius: 100px;
+	color: red;
+}
+
+.btn:hover{
+	background: red;
+	color: white;
+}
+
+.dark{
+	background:
+		linear-gradient(
+			rgba(0,0,0,.7),
+			rgba(0,0,0,.7)
+			),
+		url('./bgg.jpg');
+		background-size: cover;
+		color: #fff;
+		text-align: justify;
+
+		}
+
+
+.bg-img{
+	background:
+		linear-gradient(
+			rgba(0,0,0,.5),
+			rgba(0,0,0,.5)
+			),
+		url('./15246_319545821550503_2752678625096179463_n.jpg');
+		background-size: cover;
+		color: #fff;
+		text-align: justify;
+
+
+}
+
+
+.bg-img2{
+background:
+linear-gradient(
+rgba(0,0,0,.8),
+rgba(100,0,0,.8)
+
+	),
+url('./gh.png');
+background-size: cover;
+color: #fff;
+text-align: justify;
+
+
+}
+.wrapper{
+	max-width: 1690px;
+	margin: 0 auto;
+}
+
+.fa{
+	font-size: 400%;
+	margin-bottom: 20px;
+}
+
+
+.btn-cyan{
+	border: 1px solid red;
+	color: white;
+}
+
+.btn-cyan:hover{
+	background: red;
+	color: white;
+}
+
+@media (max-width: 600px){
+.wrapper, section{
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul{
+	flex-direction: column;
+}
+
+section.banner{
+	height: 75vh;
+
+}
+
+section.service{
+	height: auto;
+}
+
+.dark{
+	padding: 20px
+	order:1;
+}
+img{
+	box-shadow: 0px 1px 2px #111,
+				0px 1px 4px #222;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html" class="brand">Dark Corridors 2</a></h1>
+
+		</header>
+
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Chapters</a>
+		</li>
+
+		<li><a href="#">About</a>
+<ul class="sub-menu">
+	<li><a href="#">The Developer</a></li>
+	<li><a href="#">Arwin David Chua</a></li>
+
+
+</ul>
+		</li>
+
+		<li><a href="#">Contact Us</a>
+			<ul class="sub-menu">
+				<li><a href="#">arwindavidchua@yahoo.com</a></li>
+				<li><a href="#">arwindavid010116@gmail.com</a></li>
+
+			</ul>
+
+		</li>
+
+	</ul>
+
+</nav>
+
+	<main>
+		<section class="banner bg-img">
+			<div class="tagline-padding" style="display: flex; flex-direction: column;">
+				<h1 class="fa">~ Dark Corridors 2: The <span class="cyan">Death</span> of Lucy~</h1> <br>
+				<button class="btn btn-cyan"><h2>Play the game</h2></button>
+
+			</div>
+
+		</section>
+
+		<section class="service">
+			<div class="col dark bgg">
+				<h3>Read the story behind Lucy's <span class="cyan">DEATH</span></h3>
+				<button class="btn">Gallery Mode</button>
+			</div>
+
+			<div class="col bg-img2">
+				<h1>The Revenge of Lucy</h1>
+				<p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+		</section>
+
+		<section class="features">
+			<div class="col">
+				<h1><i class="fa fa-handshake-o red"></i></h1>
+				<img src="10358142_278234255681660_8032078160886029625_n.png" alt="" height="300" width="200">
+				<h1><span class="cyan">Jia</span></h1>
+				<h3>Was it all my fault?</h3>
+			</div>
+
+			<div class="col">
+				<h1><i class="fa fa-diamond red" aria-hidden="true"></i></h1>
+								<img src="10410336_278234259014993_7795758410590851100_n.png" alt="" height="300" width="200">
+				<h1><span class="cyan">Tammy</span></h1>
+				<h3>I am the only friend of Jia!</h3>
+			</div>
+
+			<div  class="col">
+				<h1><i class="fa fa-cubes red" aria-hidden="true"></i></h1>
+								<img src="10355752_278234265681659_2208736250610378758_n.png" alt="" height="300" width="200">
+		<h1><span class="cyan">Mrs. Kim</span></h1>
+				<h3>I had to face my nightmare there</h3>
+			</div>
+		</section>
+	</main>
+
+			<footer>
+
+				<div class="container">
+					<h3>(C)Arwin David P. Chua || For our beloved (C)SEMS GAMES</h3>
+
+				</div>
+
+			</footer>
+
+
+
+	</div>
+
+
+</body>
+</html>
